@@ -1,3 +1,8 @@
+"use client";
+
+import { usePathname } from "next/navigation";
+import Link from "next/link";
+
 import { UserIcon } from "@heroicons/react/24/outline";
 
 import BingeLogo from "../BingeLogo/BingeLogo";
@@ -5,14 +10,16 @@ import Menu from "../Menu/Menu";
 import IconWrapper from "../IconWrapper/IconWrapper";
 
 const Header = () => {
+  const pathname = usePathname();
   return (
-    <header className="container flex justify-between items-center w-full py-[48px] bg-[#121212]">
-      <BingeLogo height={14} />
-      <Menu />
-      <IconWrapper
-        padding="p-[12px]"
-        icon={<UserIcon className="size-6 text-[#797979]" />}
-      />
+    <header className="flex justify-between items-center w-full mb-[36px] py-[48px] text-[14px] bg-black">
+      <Link href="/">
+        <BingeLogo height={14} />
+      </Link>
+      <Menu pathname={pathname} />
+      <Link href="/">
+        <IconWrapper padding="p-[12px]" Icon={UserIcon} />
+      </Link>
     </header>
   );
 };
