@@ -3,5 +3,5 @@
 Clean IPTV player
 
 ```bash
-yarn devv
+yarn dev
 ```
