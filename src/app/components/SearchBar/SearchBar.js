@@ -7,7 +7,7 @@ const SearchBar = () => {
       <input
         type="text"
         placeholder="Rechercher un film, une série"
-        className="w-[384px] h-[48px] pl-[56px] border rounded-full outline-none focus:border-light-gray"
+        className="w-[300.711px] h-[48px] pl-[56px] border rounded-full outline-none transition-all hover:w-[384px] focus:w-[384px] focus:text-light-gray focus:border-light-gray"
       />
     </form>
   );

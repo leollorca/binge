@@ -41,7 +41,7 @@ const Menu = ({ pathname }) => {
       >
         <Link href="/fav">Favoris</Link>
       </li>
-      <li>
+      <li className="flex justify-start w-[300.711px]">
         <SearchBar />
       </li>
     </ul>
