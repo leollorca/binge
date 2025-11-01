@@ -11,7 +11,7 @@ const inter = Inter({
 
 export const metadata = {
   title: "Binge",
-  description: "Cleanest player.",
+  description: "Clean IPTV player",
 };
 
 export default function RootLayout({ children }) {
